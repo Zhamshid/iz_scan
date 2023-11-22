@@ -36,7 +36,6 @@ class _IZScanExampleScreenState extends State<IZScanExampleScreen> {
   @override
   void dispose() {
     _streamSubscription.cancel();
-
     super.dispose();
   }
 
