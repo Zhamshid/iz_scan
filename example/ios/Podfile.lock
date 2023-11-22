@@ -1,0 +1,35 @@
+PODS:
+  - CardScan (2.1.2)
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - iz_scan (0.0.1):
+    - CardScan
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - iz_scan (from `.symlinks/plugins/iz_scan/ios`)
+
+SPEC REPOS:
+  trunk:
+    - CardScan
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  iz_scan:
+    :path: ".symlinks/plugins/iz_scan/ios"
+
+SPEC CHECKSUMS:
+  CardScan: 8f06a55469d758f5ea1c8d79d25a668cab47ab1f
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  integration_test: 13825b8a9334a850581300559b8839134b124670
+  iz_scan: dc132ce183dd49ce9dfcdd43f78b61bacc09262a
+
+PODFILE CHECKSUM: 364e0a7f676fdf2446cfd67de700ef81c2399db1
+
+COCOAPODS: 1.13.0
