@@ -1,5 +1,5 @@
 name: iz_scan
-description: IZScan is a Flutter plugin designed to simplify the integration of credit/debit card scanning functionality into your mobile applications. With IZScan, you can effortlessly incorporate card scanning capabilities, allowing users to conveniently capture card details for various financial and payment-related applications.
+description: IZScan is a Flutter plugin designed to simplify the integration of credit/debit card scanning functionality into your mobile applications.
 version: 0.0.1
 homepage: "https://github.com/Zhamshid/iz_scan/"
 
