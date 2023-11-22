@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'dart:developer';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:iz_scan/iz_scan.dart';
 import 'package:iz_scan/models/card_info_model.dart';
@@ -19,20 +19,24 @@ class _IZScanExampleScreenState extends State<IZScanExampleScreen> {
   @override
   void initState() {
     super.initState();
-    _streamSubscription = IZScan.cardScanStream.listen((cardStreamInfo) {
-      log('CARD INFO $cardStreamInfo');
-      if (cardStreamInfo != null) {
-        _cardInfo.value = cardStreamInfo;
-        log('Card info from stream: ${cardStreamInfo.number} ${cardStreamInfo.expiryDate} ${cardStreamInfo.expiryMonth} ${cardStreamInfo.cardholderName}');
-      }
-    }, onError: (error) {
-      log('Error during card scan: $error');
-    });
+    _streamSubscription = IZScan.cardScanStream.listen(
+      (cardStreamInfo) {
+        if (cardStreamInfo != null) {
+          _cardInfo.value = cardStreamInfo;
+        }
+      },
+      onError: (error) {
+        if (kDebugMode) {
+          print('Error during card scan: $error');
+        }
+      },
+    );
   }
 
   @override
   void dispose() {
     _streamSubscription.cancel();
+
     super.dispose();
   }
 

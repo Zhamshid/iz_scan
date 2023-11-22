@@ -112,10 +112,10 @@ class IZScan {
             final encodedJson = json.encode(call.arguments);
             var cardInfo = CardInfoModel.fromJson(json.decode(encodedJson));
             _cardScanController.add(cardInfo);
-
-            log("card_scan cardInfo => ${cardInfo.number} ${cardInfo.expiryDate} ${cardInfo.expiryMonth} ${cardInfo.cardholderName}");
           } catch (e) {
-            log('Error decoding card info: $e');
+            if (kDebugMode) {
+              print('Error decoding card info: $e');
+            }
           }
         }
       });
