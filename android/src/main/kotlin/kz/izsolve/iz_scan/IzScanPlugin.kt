@@ -81,9 +81,9 @@ class IzScanPlugin: FlutterPlugin,  ActivityAware, MethodCallHandler, CardScanAc
             apiKey = "qOJ_fF-WLDMbG05iBq5wvwiTNTmM2qIn",
             enableEnterCardManually = false,
 
-            enableExpiryExtraction = false,
+            enableExpiryExtraction = true,
 
-            enableNameExtraction = false
+            enableNameExtraction = true
           )
 
       }

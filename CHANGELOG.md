@@ -1,3 +1,6 @@
+## 0.0.3
+- **Android -** enabled scanning of the cardholder's name and expiration date
+
 ## 0.0.2
 Package description updated
 
