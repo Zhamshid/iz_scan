@@ -41,7 +41,7 @@ class CustomSimpleScanViewController: SimpleScanViewController {
         super.setupDescriptionTextUi()
         
 
-        descriptionText.text = "Наведите камеру на номер карты. Фото будет сделано автоматически"
+        descriptionText.text = "Point the camera at the card number. The photo will be taken automatically"
         descriptionText.font = UIFont.systemFont(ofSize: 14.0)
         descriptionText.textColor = .white
         descriptionText.backgroundColor = .black
@@ -84,7 +84,7 @@ class CustomSimpleScanViewController: SimpleScanViewController {
     // MARK: -- Permissions UI --
     override public func setupDenyUi() {
         super.setupDenyUi()
-        let text = "Разрешить доступ к сканированию"
+        let text = "Allow scanning access"
         let font = UIFont.systemFont(ofSize: 20.0)
         
         let attributedString = NSMutableAttributedString(string: text)
@@ -95,7 +95,7 @@ class CustomSimpleScanViewController: SimpleScanViewController {
 
         enableCameraPermissionsButton.setAttributedTitle(attributedString, for: .normal)
         
-        enableCameraPermissionsText.text = "Вы отказали в доступе к камере. Мы используем ее для сканирования карт. Разрешите доступ к сканированию в настройках."
+        enableCameraPermissionsText.text = "You have denied access to the camera. We use it to scan cards. Allow scanning access in settings."
         enableCameraPermissionsText.textColor = UIColor.white
         enableCameraPermissionsText.textAlignment = .center
     }

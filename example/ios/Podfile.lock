@@ -13,7 +13,7 @@ DEPENDENCIES:
   - iz_scan (from `.symlinks/plugins/iz_scan/ios`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - CardScan
 
 EXTERNAL SOURCES:
@@ -30,6 +30,6 @@ SPEC CHECKSUMS:
   integration_test: 13825b8a9334a850581300559b8839134b124670
   iz_scan: dc132ce183dd49ce9dfcdd43f78b61bacc09262a
 
-PODFILE CHECKSUM: 364e0a7f676fdf2446cfd67de700ef81c2399db1
+PODFILE CHECKSUM: f178b26c981a6a461faea26137b8f51caae80f8e
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.14.3
