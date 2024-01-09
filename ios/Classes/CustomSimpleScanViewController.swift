@@ -57,28 +57,28 @@ class CustomSimpleScanViewController: SimpleScanViewController {
     // MARK: -- Close UI --
     override public func setupCloseButtonUi() {
         super.setupCloseButtonUi()
-        closeButton.setTitle("", for: .normal)
-        closeButton.setImage(UIImage(named: "arrow_back_close"), for: .normal)
+//         closeButton.setTitle("", for: .normal)
+//         closeButton.setImage(UIImage(named: "arrow_back_close"), for: .normal)
 //        closeButton.setImage(UIImage(named: "back_arrow"), for: .normal)
     }
     
     // MARK: -- Torch UI --
     override public func setupTorchButtonUi() {
         super.setupTorchButtonUi()
-        torchButton.setTitle("", for: .normal)
-        torchButton.setImage(UIImage(named: "flash_on"), for: .normal)
+//         torchButton.setTitle("", for: .normal)
+//         torchButton.setImage(UIImage(named: "flash_on"), for: .normal)
     }
     
     override func torchButtonPress() {
         super.torchButtonPress()
         
-        if isTorchOn() {
-             torchButton.setTitle("", for: .normal)
-            torchButton.setImage(UIImage(named: "flash_off"), for: .normal)
-        } else {
-            torchButton.setTitle("", for: .normal)
-            torchButton.setImage(UIImage(named: "flash_on"), for: .normal)
-        }
+//         if isTorchOn() {
+//              torchButton.setTitle("", for: .normal)
+//             torchButton.setImage(UIImage(named: "flash_off"), for: .normal)
+//         } else {
+//             torchButton.setTitle("", for: .normal)
+//             torchButton.setImage(UIImage(named: "flash_on"), for: .normal)
+//         }
     }
     
     // MARK: -- Permissions UI --
